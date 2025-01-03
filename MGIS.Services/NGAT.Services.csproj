@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82D19AE1-988D-4BF5-80D4-DA9F0F19516A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NGAT.Services</RootNamespace>
+    <AssemblyName>NGAT.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C5, Version=2.5.0.0, Culture=neutral, PublicKeyToken=282361b99ded7e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\C5.2.5.3\lib\net45\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Data, Version=1.9.0.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Data.1.9\lib\net40-Client\DotSpatial.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Mono, Version=1.9.0.0, Culture=neutral, PublicKeyToken=425ba4de41127026, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Mono.1.9\lib\net40-Client\DotSpatial.Mono.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Projections, Version=1.9.0.0, Culture=neutral, PublicKeyToken=272632bddd08a38b, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Projections.1.9\lib\net40-Client\DotSpatial.Projections.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Serialization, Version=1.9.0.0, Culture=neutral, PublicKeyToken=441f200f827611e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Serialization.1.9\lib\net40-Client\DotSpatial.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Topology, Version=1.9.0.0, Culture=neutral, PublicKeyToken=a66b5e9434ca3671, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Topology.1.9\lib\net40-Client\DotSpatial.Topology.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\netstandard2.0\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\netstandard2.0\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OsmSharp, Version=6.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OsmSharp.6.2.0\lib\net45\OsmSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.3.13.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.2.3.13\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithms\RobustShortestPath\Graph_Preprocessing.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\ScenarioBounded\ARSP_2.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\BruteForceARSP.cs" />
+    <Compile Include="Algorithms\Connected.cs" />
+    <Compile Include="Algorithms\FloydWarshall.cs" />
+    <Compile Include="Algorithms\Dijkstra.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\BruteForceRDSP.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\ScenarioBounded\ARSP_3.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\ScenarioBounded\ARSP_Bounded_Scenario.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\ScenarioBounded\IBoundedARSP.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\ScenarioBounded\IBoundedRDSP.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\ScenarioBounded\RDSP_2.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\ScenarioBounded\RDSP_3.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\ScenarioBounded\RDSP_Bounded_Scenario.cs" />
+    <Compile Include="Algorithms\RobustShortestPath\Utils.cs" />
+    <Compile Include="Algorithms\TurnProhibitionsGraphs\TurnNetProhibitionsGraph.cs" />
+    <Compile Include="Algorithms\AlgorithmUtils.cs" />
+    <Compile Include="Algorithms\TurnProhibitionsGraphs\SplitProhibitionsGraph.cs" />
+    <Compile Include="ApplicationServices\ApplicationService.cs" />
+    <Compile Include="ApplicationServices\Graphs\GraphsApplicationService.cs" />
+    <Compile Include="Containers\GRFContainer.cs" />
+    <Compile Include="Containers\OsmPbfContainer.cs" />
+    <Compile Include="DataImporters\DataImportRPD.cs" />
+    <Compile Include="DataImporters\DataImportXLSX\DataImportXLSX.cs" />
+    <Compile Include="DataImporters\DataImportXLSX\frmSelectFromExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataImporters\DataImportXLSX\frmSelectFromExcel.Designer.cs">
+      <DependentUpon>frmSelectFromExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForbiddenTurns\ClassicForbiddenTurnFilter.cs" />
+    <Compile Include="IO\AttributesFetcherCollection.cs" />
+    <Compile Include="IO\DefaultShapeFilesGraphBuilder.cs" />
+    <Compile Include="IO\DefaultShapesFileGraphBuilderInput.cs" />
+    <Compile Include="IO\GeoJSONGraphExporter.cs" />
+    <Compile Include="IO\GRFGraphExporter.cs" />
+    <Compile Include="IO\GRFGraphBuilder.cs" />
+    <Compile Include="IO\LinkFiltrerCollection.cs" />
+    <Compile Include="IO\GraphFiles\RoutingProblemFile.cs" />
+    <Compile Include="IO\GraphFiles\GRFFile.cs" />
+    <Compile Include="IO\GraphFiles\OsmPbfFile.cs" />
+    <Compile Include="IO\GraphFiles\RoutingProblemType.cs" />
+    <Compile Include="IO\Osm\OsmPbfGraphBuilder.cs" />
+    <Compile Include="IO\Osm\OsmRoadLinksFilterCollection.cs" />
+    <Compile Include="Layers\CimexShapeFileFilter.cs" />
+    <Compile Include="Layers\CupetShapeFileFilter.cs" />
+    <Compile Include="Layers\FuelShapeFileFilter.cs" />
+    <Compile Include="Layers\HavanaMunicipalitiesFilter.cs" />
+    <Compile Include="Layers\HospitalShapeFileFilter.cs" />
+    <Compile Include="Layers\NullFilter.cs" />
+    <Compile Include="Layers\PBFCrossingFilter.cs" />
+    <Compile Include="Layers\OsmPBFLayerProvider.cs" />
+    <Compile Include="Layers\PBFTrafficSignalsFilter.cs" />
+    <Compile Include="Layers\ShapeFileLayerProvider.cs" />
+    <Compile Include="Layers\ShapeFilePointsLayerProvider.cs" />
+    <Compile Include="Layers\ShopPBFFilter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultDisplayers\DisplayRoute.cs" />
+    <Compile Include="ResultDisplayers\ShowRoute.cs" />
+    <Compile Include="ResultDisplayers\StringMarker.cs" />
+    <Compile Include="ResultExporters\MapImageExporter.cs" />
+    <Compile Include="ResultExporters\RouteSheetExporter.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\NGAT.Services.DataImporters.DataImportXLSX.DataImportXLSX.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MGIS.Business\NGAT.Business.csproj">
+      <Project>{81117c61-fdad-4bc5-8691-59a101f69573}</Project>
+      <Name>NGAT.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MGIS.Geo\NGAT.Geo.csproj">
+      <Project>{93448F9E-602F-4ECC-95E6-18FCDF15AC35}</Project>
+      <Name>NGAT.Geo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="DataImporters\DataImportXLSX\frmSelectFromExcel.resx">
+      <DependentUpon>frmSelectFromExcel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
