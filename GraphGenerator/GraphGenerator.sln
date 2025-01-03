@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGAT.Business", "MGIS.Business\NGAT.Business.csproj", "{81117C61-FDAD-4BC5-8691-59A101F69573}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NGAT.GraphGenerator.Business", "NGAT.GraphGenerator.Business\NGAT.GraphGenerator.Business.csproj", "{06FA9588-9A8F-4A84-B25B-6DE3164A3F81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NGAT.GraphGenerator.Services", "NGAT.GraphGenerator.Services\NGAT.GraphGenerator.Services.csproj", "{CCFDC733-0E41-4404-A893-33CD09CBA233}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NGAT.GraphGenerator.Visual", "NGAT.GraphGenerator.Visual\NGAT.GraphGenerator.Visual.csproj", "{B6A3A9E1-F232-4B7C-985E-1D798A5A3625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGAT.Geo", "MGIS.Geo\NGAT.Geo.csproj", "{93448F9E-602F-4ECC-95E6-18FCDF15AC35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81117C61-FDAD-4BC5-8691-59A101F69573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81117C61-FDAD-4BC5-8691-59A101F69573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81117C61-FDAD-4BC5-8691-59A101F69573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81117C61-FDAD-4BC5-8691-59A101F69573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06FA9588-9A8F-4A84-B25B-6DE3164A3F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06FA9588-9A8F-4A84-B25B-6DE3164A3F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06FA9588-9A8F-4A84-B25B-6DE3164A3F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06FA9588-9A8F-4A84-B25B-6DE3164A3F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFDC733-0E41-4404-A893-33CD09CBA233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFDC733-0E41-4404-A893-33CD09CBA233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFDC733-0E41-4404-A893-33CD09CBA233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFDC733-0E41-4404-A893-33CD09CBA233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A3A9E1-F232-4B7C-985E-1D798A5A3625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A3A9E1-F232-4B7C-985E-1D798A5A3625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A3A9E1-F232-4B7C-985E-1D798A5A3625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A3A9E1-F232-4B7C-985E-1D798A5A3625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93448F9E-602F-4ECC-95E6-18FCDF15AC35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93448F9E-602F-4ECC-95E6-18FCDF15AC35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93448F9E-602F-4ECC-95E6-18FCDF15AC35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93448F9E-602F-4ECC-95E6-18FCDF15AC35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F46123B6-812B-490B-B5DC-F43B5228A1F9}
+	EndGlobalSection
+EndGlobal
